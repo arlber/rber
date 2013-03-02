@@ -6,7 +6,7 @@ require 'json'
 
 class Rber < Sinatra::Application
 
-  DataMapper.setup(:default, ENV['DATABASE_URL'] || "sqlite3://#{Dir.pwd}/dev.db")
+  DataMapper.setup(:default, ENV['DATABASE_URL'] || 'postgres://localhost/mydb')
 
   class Question
     include DataMapper::Resource
