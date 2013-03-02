@@ -1,0 +1,11 @@
+%h1 new question bro
+
+%form{"accept-charset" => "utf-8", :action => "/questions", :method => "post"}
+  %p
+    Question:
+    %input{:id => "question[question]", :name => "question[question]", :type => "text", :value => ""}/
+  %p
+    Answer:
+    %input{:id => "question[answer]", :name => "question[answer]", :type => "text", :value => ""}/
+  %p
+    %input{:type => "submit", :value => "Add question"}/
